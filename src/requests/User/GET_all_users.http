@@ -1,0 +1,10 @@
+### ENDPOINT to get all user on database WITHOUT auth
+
+GET http://localhost:3001/user/withauth/visualizar?aggregations={}
+content-type: application/json 
+
+
+### Endpoint to get all users. Require authorization
+GET http://localhost:3001/user?aggregations={}
+content-type: application/json 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhYmFzZSI6InZpc3VhbGl6YXIiLCJfaWQiOiI2MTdiNGVlNWRmNDQ2Y2ZiNjM3ZWNmZDQiLCJpYXQiOjE2NDIyMTE2MzUsImV4cCI6MTY0MjU3MTYzNX0.5iyB-XnMUPBSEYud7rTzBseZ63hm-w9kbXHBHcsomS4
