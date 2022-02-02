@@ -10,6 +10,7 @@ import PermissionContainer from '@Presentation/Controllers/Permission/inversify'
 import RolContainer from '@Presentation/Controllers/Rol/inversify'
 import MailContainer from '@Presentation/Controllers/Mail/inversify'
 import CategoryContainer from '@Presentation/Controllers/Category/inversify'
+import MenuContainer from '@Presentation/Controllers/Menu/inversify'
 // containerimport
 
 // Interfaces
@@ -125,6 +126,7 @@ let containerReturn = Container.merge(container, EntityContainer)
 containerReturn = Container.merge(containerReturn, PermissionContainer)
 containerReturn = Container.merge(containerReturn, RolContainer)
 containerReturn = Container.merge(containerReturn, CategoryContainer)
+containerReturn = Container.merge(containerReturn, MenuContainer)
 // push
 
 export default containerReturn
