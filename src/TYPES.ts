@@ -1,5 +1,6 @@
 import user from '@Presentation/Controllers/User/types'
 import mail from '@Presentation/Controllers/Mail/types'
+import category from '@Presentation/Controllers/Category/types'
 import entity from '@Presentation/Controllers/Entity/types'
 
 let returnEntities: any = {}
@@ -7,6 +8,7 @@ const jsonConcat = (o1: any, o2: any)  => { for (var key in o2) { o1[key] = o2[k
 
 returnEntities = jsonConcat(returnEntities, user);
 returnEntities = jsonConcat(returnEntities, mail);
+returnEntities = jsonConcat(returnEntities, category);
 returnEntities = jsonConcat(returnEntities, entity);
 
 let TYPES = {
