@@ -40,9 +40,9 @@ export default class App implements Appeable {
 
 	public listen(): void {
 		let port: string = process.env.PORT;
-		if (port === undefined || port === null) {
+	/* 	if (port === undefined || port === null) {
 			port = '3000';
-		}
+		} */
 
 		this.app.use((req, res, next) => {
 			res.header("Access-Control-Allow-Origin", "*");
