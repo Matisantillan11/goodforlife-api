@@ -9,6 +9,9 @@
   },
   "author": "@matisantillan11",
   "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
