@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && nodemon -r tsconfig-paths/register ./dist/src/index.js",
+    "start": "nodemon -r tsconfig-paths/register ./src/index.ts",
     "dev": "nodemon -r tsconfig-paths/register ./src/index.ts"
   },
   "author": "@matisantillan11",
