@@ -5,6 +5,7 @@ import { DatabaseModule } from './Application/database/database.module';
 import { UserModule } from './User/user.module';
 import { ConnectionProvider } from './Application/database/connectionProvider.service';
 import { AppService } from './app.service';
+import { ProductModule } from './Product/product.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { AppService } from './app.service';
     }),
     DatabaseModule,
     UserModule,
+    ProductModule,
   ],
   controllers: Config.controllers.app,
   providers: Config.services.app,
