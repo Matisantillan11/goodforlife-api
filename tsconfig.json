@@ -1,22 +1,21 @@
 {
   "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
     "sourceMap": true,
-		"target": "es2017",
-		"outDir": "./dist/src",
-		"baseUrl": "./",
-		"alwaysStrict": true,
-		"noImplicitAny": false,
-		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true,
-		"moduleResolution": "node",
-    "paths": {
-			"@src/*": ["src/*"],
-			"@Domain/*": ["src/Domain/*"],
-			"@Infrastructure/*": ["src/Infrastructure/*"],
-			"@test/*": ["src/test/*"],
-			"@Presentation/*": ["src/Presentation/*"],
-			"@Application/*": ["src/Application/*"]
-		},
-
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
   }
 }
