@@ -15,6 +15,7 @@ export const Config = {
     company: process.env.DB_NAME,
     front: process.env.FRONT,
     cluster: process.env.NODE_ENV === 'PROD' ? process.env.CLUSTER : process.env.CLUSTER_TEST,
+    tokenSecret: process.env.TOKEN_SECRET || 'g4LT0kenS3cr3t',
   },
   services: {
     app: [AppService],

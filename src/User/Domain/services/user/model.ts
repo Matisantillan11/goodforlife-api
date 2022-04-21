@@ -28,6 +28,15 @@ export const model = {
     type: String,
     typed: 'string',
   },
+  password: {
+    type: String,
+    typed: 'string',
+  },
+
+  enabled: {
+    type: Boolean,
+    typed: 'boolean',
+  },
 
   entity: {
     type: String,

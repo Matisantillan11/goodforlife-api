@@ -5,6 +5,8 @@ import { DatabaseModule } from './Application/database/database.module';
 import { UserModule } from './User/user.module';
 import { ConnectionProvider } from './Application/database/connectionProvider.service';
 import { AppService } from './app.service';
+import { EmailModule } from './Application/email/email.module';
+import { AuthenticationModule } from './Application/authentication/authentication.module';
 import { ProductModule } from './Product/product.module';
 
 @Module({
@@ -14,6 +16,8 @@ import { ProductModule } from './Product/product.module';
       isGlobal: true,
     }),
     DatabaseModule,
+    AuthenticationModule,
+    EmailModule,
     UserModule,
     ProductModule,
   ],

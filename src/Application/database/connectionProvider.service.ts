@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Model, Document, Schema, createConnection, ConnectOptions } from 'mongoose';
-import { ConnectionOptions } from 'tls';
+import { Model, Document, Schema, createConnection } from 'mongoose';
 import DBConnection from './interface';
 
 @Injectable()
@@ -14,9 +13,7 @@ export class ConnectionProvider {
     let connection: DBConnection;
 
     if (database) {
-      if (ConnectionProvider.connections.length > 0) {
-        connection = this.getConnection(database);
-      }
+      connection = this.getConnection(database);
 
       if (!connection) {
         console.log('Creó conexión con base de datos: ' + database);

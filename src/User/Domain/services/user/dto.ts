@@ -25,4 +25,8 @@ export default class Dto extends DtoUtil implements Interface {
   @IsString({ message: 'El país debe ser un string' })
   @IsNotEmpty()
   public country: string;
+
+  public password: string;
+
+  public enabled: boolean;
 }
